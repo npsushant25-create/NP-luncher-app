@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_app"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fadeScrollbars="true"
+        android:scrollbarThumbVertical="@color/minebutton_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/fragment_padding_medium"
+            android:paddingBottom="@dimen/padding_large">
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_large"
+                android:text="@string/skincape_title"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/_16ssp"
+                android:textStyle="bold" />
+
+            <!-- ===== SKIN SECTION ===== -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_large"
+                android:text="@string/skincape_skin_section"
+                android:textColor="@color/secondary_text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/fragment_padding_medium">
+
+                <ImageView
+                    android:id="@+id/skincape_skin_preview"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/background_line"
+                    android:scaleType="centerCrop" />
+
+                <EditText
+                    android:id="@+id/skincape_skin_url"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="@dimen/padding_medium"
+                    android:background="@drawable/background_line"
+                    android:hint="@string/skincape_url_hint"
+                    android:inputType="textUri"
+                    android:paddingHorizontal="@dimen/padding_heavy"
+                    android:textSize="@dimen/_13ssp" />
+            </LinearLayout>
+
+            <com.kdt.mcgui.MineButton
+                android:id="@+id/skincape_skin_upload_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fragment_padding_medium"
+                android:text="@string/skincape_upload_button" />
+
+            <!-- ===== CAPE SECTION ===== -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_large"
+                android:text="@string/skincape_cape_section"
+                android:textColor="@color/secondary_text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fragment_padding_medium"
+                android:text="@string/skincape_cape_presets"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/_11ssp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:layout_marginTop="4dp">
+
+                <LinearLayout
+                    android:id="@+id/skincape_cape_preset_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/padding_large">
+
+                <ImageView
+                    android:id="@+id/skincape_cape_preview"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/background_line"
+                    android:scaleType="centerCrop" />
+
+                <EditText
+                    android:id="@+id/skincape_cape_url"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="@dimen/padding_medium"
+                    android:background="@drawable/background_line"
+                    android:hint="@string/skincape_url_hint"
+                    android:inputType="textUri"
+                    android:paddingHorizontal="@dimen/padding_heavy"
+                    android:textSize="@dimen/_13ssp" />
+            </LinearLayout>
+
+            <com.kdt.mcgui.MineButton
+                android:id="@+id/skincape_cape_upload_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fragment_padding_medium"
+                android:text="@string/skincape_upload_button" />
+
+            <!-- ===== CURSOR SECTION ===== -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_large"
+                android:text="@string/skincape_cursor_section"
+                android:textColor="@color/secondary_text" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:layout_marginTop="4dp">
+
+                <LinearLayout
+                    android:id="@+id/skincape_cursor_preset_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
+            </HorizontalScrollView>
+
+            <com.kdt.mcgui.MineButton
+                android:id="@+id/skincape_cursor_upload_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fragment_padding_medium"
+                android:text="@string/skincape_upload_button" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/fragment_padding_medium"
+        android:layout_marginVertical="13dp">
+
+        <com.kdt.mcgui.MineButton
+            android:id="@+id/skincape_save_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/skincape_save_button" />
+    </LinearLayout>
+</LinearLayout>

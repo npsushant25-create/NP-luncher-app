@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="control_button_color">#4CC4C4C4</color>
+        <color name="control_button_pressed_color">#4D000000</color>
+
+            <color name="minebutton_color">#B71C2C</color>
+                <color name="background_app">#0D0605</color>
+                    <color name="divider">@color/background_overlay</color>
+                        <color name="background_overlay">#2A0A0C</color>
+                            <color name="background_status_bar">#0D0605</color>
+                                <color name="background_bottom_bar">#150808</color>
+
+                                    <color name="primary_text">#FFFFFF</color>
+                                        <color name="secondary_text">#D0D0D0</color>
+
+                                            <color name="nepal_crimson">#DC143C</color>
+                                                <color name="nepal_blue">#003893</color>
+                                                </resources>
